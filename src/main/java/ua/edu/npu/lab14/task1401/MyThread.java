@@ -16,13 +16,13 @@ public class MyThread implements Runnable {
         System.out.println(name + " обирає книгу.");
 
         try {
-            System.out.println(name + "очікує книгу.");
+            System.out.println(name + " очікує книгу.");
             book.acquire();
-            System.out.println(name + "отримує книгу.");
+            System.out.println(name + " отримує книгу.");
 
             for (int i = 0; i < 5; i++) {
                 Shared.count--;
-                //System.out.println(name + ": " + Shared.count);
+
             }
         }
         catch (InterruptedException e) {
